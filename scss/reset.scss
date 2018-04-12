@@ -1,0 +1,33 @@
+html, body, p, h1, h2, h3, img, ul, li, a{
+    margin: 0;
+    padding: 0;
+}
+/* Tags reset
+*******************************************************************************/
+html {
+    overflow-y: scroll;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    outline: none;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    max-width: 100%;
+}
+a:link {
+    -webkit-tap-highlight-color: #007aff;
+}

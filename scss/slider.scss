@@ -1,0 +1,9 @@
+.slider-visual{
+    img{
+        opacity: 0.9;
+        &.scale{
+            transform: scale(-1, 1);
+        }
+    }
+}
+

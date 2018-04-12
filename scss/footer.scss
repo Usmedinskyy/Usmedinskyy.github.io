@@ -1,0 +1,61 @@
+.footer {
+    padding: 50px 0 25px 0;
+
+    .fl-sb-c{
+        @media screen and (max-width: $mobile){
+            display: block;
+            text-align: center;
+        }
+    }
+    .main-menu{
+        @media screen and (max-width: $mobile){
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+        li{
+            &:first-child{
+                margin: 0;
+            }
+            @media screen and (max-width: $mobile){
+                float: none;
+                margin: 0;
+            }
+
+        }
+    }
+    .social {
+
+        li {
+            display: inline-block;
+            margin: 0 16px 0 0;
+            text-transform: uppercase;
+            &:last-child{
+                margin: 0;
+            }
+        }
+        a{
+            display: block;
+            border-radius: 50%;
+            &:hover{
+                box-shadow: 0 0 5px 1px rgba(14, 16, 33, 0.17);
+            }
+        }
+        span {
+            font-size: 41px;
+
+        }
+    }
+    .main-menu{
+        > li.drop-down a:after{
+            display: none;
+        }
+    }
+    .copy{
+        text-align: right;
+        color: #b5b5b5;
+        margin: 35px 0 0 0;
+        @media screen and (max-width: $mobile){
+            text-align: center;
+        }
+    }
+}
