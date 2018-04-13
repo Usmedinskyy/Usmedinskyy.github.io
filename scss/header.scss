@@ -4,11 +4,11 @@
     .menu-search-wrap {
         display: flex;
         align-items: center;
-    }
-    .search-toggle {
-        margin: 0 0 0 57px;
-        padding: 0 0 0 40px;
-        border-left: 1px solid #e8e8e8;
-        font-size: 20px;
+        .search-toggle {
+            margin: 0 0 0 57px;
+            padding: 0 0 0 40px;
+            border-left: 1px solid #e8e8e8;
+            font-size: 20px;
+        }
     }
 }

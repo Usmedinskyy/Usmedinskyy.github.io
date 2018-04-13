@@ -1,6 +1,9 @@
 .visual{
     position: relative;
-    background-color: #00294e;
+    background: #00294e;
+    @media screen and (max-width: $mobile){
+        background: #ffffff;
+    }
     .title{
         position: absolute;
         text-align: center;
@@ -16,8 +19,8 @@
             line-height: 24px;
         }
         @media screen and (max-width: $mobile){
-            top: inherit;
-            bottom: 0;
+            position: relative;
+            color: #333333;
         }
     }
 }

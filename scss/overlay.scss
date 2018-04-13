@@ -18,6 +18,7 @@
             opacity: 0.7;
         }
     }
+
     .search-wrap {
         position: relative;
         max-width: 980px;
@@ -25,6 +26,9 @@
         top: calc(50% - 51px);
         padding: 0 0 15px 0;
         border-bottom: 1px solid #f1f1f5;
+        button{
+            font-size: 0;
+        }
         label {
             position: absolute;
             bottom: 16px;
