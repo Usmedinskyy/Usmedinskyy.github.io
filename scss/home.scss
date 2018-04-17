@@ -1,7 +1,7 @@
 .visual{
     position: relative;
     background: #00294e;
-    @media screen and (max-width: $mobile){
+    @media screen and (max-width: $tablet){
         background: #ffffff;
     }
     .title{
@@ -18,7 +18,7 @@
             font-size: 16px;
             line-height: 24px;
         }
-        @media screen and (max-width: $mobile){
+        @media screen and (max-width: $tablet){
             position: relative;
             color: #333333;
         }
@@ -26,7 +26,6 @@
 }
 .main{
     padding: 60px 0 75px 0;
-    border-bottom: 1px solid #f1f1f5;
     p{
         color: $color;
         font-size: 14px;
@@ -40,22 +39,21 @@
         }
     }
 }
-
 .quote{
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
-    position: relative;
-    font: italic 16px/30px $font-alt;
-    color: #333333;
-    letter-spacing: 0.16px;
+
+    color: #333;
     padding: 45px 0 42px 0;
     box-sizing: border-box;
-    margin: 0 0 50px 0;
+    margin: 45px 0;
     blockquote{
-        font-size: 20px;
+        font: italic 16px/30px $font-alt;
         margin: 0 0 20px 0;
         padding: 0 0 0 70px;
         box-sizing: border-box;
+        letter-spacing: 0.16px;
+        position: relative;
         @media screen and (max-width: $mobile){
             padding: 0 5px;
         }
@@ -66,8 +64,8 @@
             font-family: $font-alt;
             font-style: normal;
             position: absolute;
-            left: 0;
-            top: 70px;
+            left: -2px;
+            top: 25px;
             @media screen and (max-width: $mobile){
                 font-size: 32px;
                 position: relative;
@@ -76,7 +74,6 @@
             }
         }
     }
-
     span{
         color: #797979;
         font: 400 14px/24px "Work Sans";
@@ -98,11 +95,11 @@
 
 .table-home{
     overflow-x:auto;
+    margin: 0 0 42px 0;
     table{
         width: 100%;
         border: 1px solid #f0f0f0;
         border-collapse: collapse;
-        margin: 0 0 42px 0;
         th, td{
             padding: 13px;
             text-align: left;
@@ -128,15 +125,29 @@
 
 .section-post{
     padding: 65px 0;
+    border-top: 1px solid #f1f1f5;
+    border-bottom: 1px solid #f1f1f5;
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .fl-sb{
+        @media screen and (max-width: 1155px){
+            justify-content: center;
+        }
+    }
     .post{
         display: flex;
         flex-wrap: wrap;
-        max-width: 366px;
-        margin: 20px 1%;
+        max-width: 372px;
+        margin: 20px 0;
         box-shadow: 0 0 8px 1px rgba(17, 20, 48, 0.11);
         background-color: #fff;
         &:hover{
             box-shadow: 0 0 8px 1px rgba(17, 20, 48, 0.28);
+        }
+        @media screen and (max-width: 1155px){
+            margin: 20px ;
         }
     }
     .img{
