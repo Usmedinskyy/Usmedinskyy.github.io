@@ -32,6 +32,12 @@
             </a>
             <div class="menu-search-wrap">
                 <nav>
+                    <button id="nav-icon" class="menu-toggle btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="main-menu cf">
                         <li class="drop-down"><a href="#">About</a>
                             <ul>
@@ -45,7 +51,6 @@
                         <li><a href="#">Resources</a></li>
                         <li><a href="#" class="form-toggle">Contact us</a></li>
                     </ul>
-                    <a href="javascript:void(0);" class="menu-mob">&#9776;</a>
                 </nav>
                 <a href="#" class="search-toggle icon-search" title="open search"></a>
             </div>
@@ -98,6 +103,11 @@
     </div>
     <div class="slider-visual">
         <div>
+            <!--<picture>-->
+                <!--<source media="(min-width: 425px)" srcset="images/01.png 1x, images/01@2x.png 2x"/>-->
+                <!--<source srcset="images/01-mob.png 1x, images/01.png 2x"/>-->
+                <!--<img src="images/01.png" alt="mobile app">-->
+            <!--</picture>-->
             <img src="images/1.jpg" alt="Kuril Islands">
         </div>
         <div>
@@ -288,8 +298,15 @@
         $('.form-toggle').click(function () {
             $('#overlay-contact').fadeToggle('1000');
         });
-        $('.menu-mob').click(function () {
-            $('.main-menu').slideToggle(0);
+        $('.menu-toggle').click(function () {
+            $('.main-menu').slideToggle(300, function () {
+                if($(this).css('display') === 'none'){
+                    $(this).removeAttr('style');
+                }
+            });
+        });
+        $('#nav-icon').click(function(){
+            $(this).toggleClass('open');
         });
 
         $('.slider-visual').bxSlider({
@@ -301,10 +318,10 @@
             pager: false,
             autoControls: false
         });
-    });
-    $(document).ready(function () {
+
         $('#tel').mask('+(380)-111-11-11');
     });
+
     $(document).ready(function () {
         var mail = $('#mail');
         var phone = $('#tel');
